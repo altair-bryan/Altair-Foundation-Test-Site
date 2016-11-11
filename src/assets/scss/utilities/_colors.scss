@@ -1,0 +1,31 @@
+/* Color themes */
+$themes: (
+    altair: #666,
+    anna-klein: #f1c40f,
+    bebe: #c0392b
+); // color array
+
+
+
+/*
+    Helper theme mixin
+    @param $name: name of the theme (HTML class)
+    @param $color: color of the theme
+*/
+@mixin theme($brand, $color) {
+    .#{$brand} {
+        border-top: 3px solid darken($color, 10%);
+        // border-color: darken($color, 10%);
+
+        h2 {
+            color: $color;
+        } // h2
+    } // brand
+} // theme mixin
+
+
+
+/* Including themes - this is looping through the $themes map */
+@each $key, $value in $themes {
+     @include theme($key, $value);
+} // loop

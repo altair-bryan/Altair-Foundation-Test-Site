@@ -1,0 +1,21 @@
+footer {
+    background: $black;
+    color: $white;
+    padding: 3rem 0;
+
+    form {
+        label {
+            color: $white;
+        } // label
+
+        .is-invalid-input {
+            &:not(:focus) {
+                background-color: $white;
+            } // and not focused on
+        } // is-invalid-input
+    } // form
+
+    p {
+        margin: 0;
+    } // p
+} // footer

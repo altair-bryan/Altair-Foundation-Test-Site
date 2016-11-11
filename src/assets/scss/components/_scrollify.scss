@@ -1,0 +1,29 @@
+.example-classname:first-child {
+    background: $primary-color;
+    color: $white;
+    position: relative;
+
+    h1 {
+        @include absolute-center;
+    }
+} // example-classname
+
+.example-classname {
+    background: $secondary-color;
+    color: $white;
+    position: relative;
+
+    h1 {
+        @include absolute-center;
+    }
+} // example-classname
+
+.example-classname:nth-of-type(3) {
+    background: $success-color;
+    color: $white;
+    position: relative;
+
+    h1 {
+        @include absolute-center;
+    }
+} // example-classname

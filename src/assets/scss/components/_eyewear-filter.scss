@@ -1,0 +1,58 @@
+.eyewear-filter {
+    ul {
+        background: $light-gray;
+        margin: $global-margin 0;
+        li {
+            &:first-child {
+                a {
+                    padding: 0 0 0 1rem;
+
+                    &:after {
+                        content: '|';
+                        padding: 0 1rem;
+                    } // after
+                } // a
+            } // first-child
+
+            a {
+                font-size: 12px;
+                padding: 1rem 0;
+                text-transform: uppercase;
+
+                &:after {
+                    content: '|';
+                    padding: 0 1rem;
+                } // after
+            } // a
+
+            &:last-child {
+                a {
+                    padding: 0 1rem 0 0;
+
+                    &:after {
+                        content: '';
+                        padding: 0;
+                    } // after
+                } // a
+            } // last-child
+        } // li
+    } // ul
+
+    .assortment-options {
+        display: none;
+    } // .assortment-options
+
+    .gender-options {
+        display: none;
+    } // .gender-options
+
+    .material-options {
+        display: none;
+    } // .material-options
+} // .eyewear-filter
+
+#container {
+    .mix {
+        display: none;
+    } // .mix
+} // #container

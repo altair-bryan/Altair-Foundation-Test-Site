@@ -1,0 +1,49 @@
+
+/* parallax background array */
+$background-images: (
+    1: "/assets/img/parallax-bg-1.jpg",
+    2: "/assets/img/parallax-bg-2.jpg",
+    3: "/assets/img/parallax-bg-3.jpg"
+); // color array
+
+
+
+/* parallax background mixin */
+@mixin theme($number, $path) {
+    .bg-#{$number} {
+        background: url($path) fixed center center no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        position: relative;
+
+        button {
+            @include absolute-center;
+            border: 1px $white solid;
+            color: $white;
+            padding: $button-padding;
+        } // button
+    } // bg
+} // parallax background mixin
+
+
+
+/* parallax background loop */
+@each $key, $value in $background-images {
+     @include theme($key, $value);
+} // loop
+
+
+
+.separator {
+
+} // separator
+
+
+.rellax {
+    background: purple;
+    color: $white;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5rem;
+}

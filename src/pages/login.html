@@ -1,0 +1,29 @@
+<div class="log-in-form">
+    <div class="row">
+        <div class="medium-7 medium-centered large-5 columns">
+            <form class="login" action="/brands/altair.html" data-abide novalidate>
+                <div data-abide-error class="alert callout" style="display: none;">
+                    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                </div>
+                <h5 class="text-center">Log in with you email account</h5>
+                <label>Email
+                    <input type="text" placeholder="somebody@example.com" aria-describedby="email address" required pattern="email">
+                    <span class="form-error">
+                        Required
+                    </span>
+                </label>
+                <label>Password
+                    <input id="password" type="password" placeholder="Password" required pattern="password">
+                    <span class="form-error">
+                        Required
+                    </span>
+                </label>
+                <fieldset>
+                    <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
+                    <button class="button expanded" type="submit" value="Submit">Submit</button>
+                </fieldset>
+                <p class="text-center"><a href="#">Forgot your password?</a></p>
+            </form>
+        </div> <!-- /.medium-6 -->
+    </div> <!-- /.row -->
+</div> <!-- /.log-in-form -->

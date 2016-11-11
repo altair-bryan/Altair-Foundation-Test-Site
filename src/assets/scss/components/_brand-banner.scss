@@ -1,0 +1,24 @@
+/* brand banner array */
+$brand-themes: (
+    altair: "/assets/img/altair-banner.jpg",
+    anna-klein: "/assets/img/anna-klein-banner.jpg",
+    bebe: "/assets/img/bebe-banner.jpg"
+); // color array
+
+
+
+/* brand banner mixin */
+@mixin theme($brand, $path) {
+    .#{$brand}-banner {
+        background: url($path) center center no-repeat;
+        background-size: cover;
+        height: 200px;
+    } // brand
+} // theme mixin
+
+
+
+/* brand banner loop */
+@each $key, $value in $brand-themes {
+     @include theme($key, $value);
+} // loop

@@ -1,0 +1,97 @@
+/* tiles */
+.tiles {
+
+	figure {
+		background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+		background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+		margin: 0 0 30px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		width: 100%;
+
+		.caption-wrapper {
+
+			@include vertical-center;
+
+			h2 {
+				margin: 0 0 10px;
+			} // h2
+
+			p {
+				margin: 0;
+				padding: 0 3rem 0 0;
+			} // p
+		} // .caption-wrapper
+
+		p,
+		a {
+			opacity: 0;
+			-webkit-transform: translate3d(-10px,0,0);
+			transform: translate3d(-10px,0,0);
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+		} // p,a
+
+		img {
+			opacity: 0.8;
+			max-width: none;
+			-webkit-transform: translate3d(-60px,0,0);
+			transform: translate3d(-60px,0,0);
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			width: -webkit-calc(100% + 60px);
+			width: calc(100% + 60px);
+		} // img
+
+		&:hover img {
+			opacity: 0.8;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		} // figure hover img
+
+		figcaption {
+			background: rgba(0, 0, 0, 0.4);
+			color: $white;
+			font-size: 19px;
+			padding: 2.5rem;
+			text-align: left;
+			text-transform: uppercase;
+
+			&::before {
+				bottom: 1.25rem;
+				border: 1px solid #fff;
+				content: '';
+				left: 1.25rem;
+				opacity: 0;
+				position: absolute;
+				right: 1.25rem;
+				top: 1.25rem;
+				-webkit-transform: translate3d(-20px,0,0);
+				transform: translate3d(-20px,0,0);
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s, transform 0.35s;
+			} // figcaption before
+
+			a {
+				color: $white;
+			} // a
+		} // figcaption
+
+		figcaption,
+		figcaption > a {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		} // figcaption, figcaption > a
+
+		&:hover p,
+		&:hover figcaption::before {
+			opacity: 1;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		} // figure hover p, figure hover figcaption before
+	} // figure
+} // .tiles

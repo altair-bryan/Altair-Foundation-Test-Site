@@ -1,0 +1,41 @@
+<header data-sticky-container>
+    <div class="sticky-header" data-sticky data-options="marginTop:0;">
+        <div class="row">
+            <div class="small-12 columns">
+
+                <div class="responsive-wrapper">
+                    <a class="float-left" href="/"><img class="logo" src="../assets/img/logo.png" alt="logo"></a>
+
+                    <div class="title-bar float-right" data-toggle="main-menu" data-responsive-toggle="main-menu" data-hide-for="medium">
+                        <button class="menu-icon" type="button"></button>
+                        <div class="title-bar-title">Menu</div>
+                        <i class="fi-magnifying-glass show-for-small-only" aria-hidden="true" data-toggle="search-modal"></i>
+                    </div> <!-- /.title-bar -->
+                </div> <!-- /.responsive-wrapper -->
+
+
+
+                <div class="top-bar" id="main-menu" data-toggler data-animate="slide-in-down slide-out-up">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-responsive-menu="drilldown medium-dropdown">
+                            <li class="has-submenu">
+                                <a href="#">Brands</a>
+
+                                <ul class="submenu menu vertical" data-submenu>
+                                    <li><a {{#ifpage 'altair'}}class="active" {{/ifpage}} href="{{root}}brands/altair.html">Altair</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="{{root}}login.html">Login</a></li>
+                            <li><a href="{{root}}custom-search.html">Custom Search</a></li>
+                        </ul>
+                    </div> <!-- /.top-bar-left -->
+
+                    <div class="top-bar-right">
+                        <i class="fi-magnifying-glass show-for-medium" aria-hidden="true" data-toggle="search-modal"></i>
+                    </div> <!-- /.top-bar-right -->
+                </div> <!-- /.top-bar -->
+            </div> <!-- /.small-12 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.sticky-header -->
+</header> <!-- /header -->

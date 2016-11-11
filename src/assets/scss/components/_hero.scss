@@ -1,0 +1,18 @@
+.hero {
+    @include breakpoint(large) {
+        background: url('../img/home-hero-test.jpg') top center no-repeat;
+        height: 75vh;
+        position: relative;
+        width: 100%;
+    } // large breakpoint
+
+    .hero-content-container {
+
+        padding: 2rem 0 0;
+
+        @include breakpoint(large) {
+            @include vertical-center;
+            padding: 2.5rem;
+        } // large breakpoint
+    } // hero-content-wrapper
+} // home-hero

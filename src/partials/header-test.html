@@ -1,0 +1,69 @@
+<header data-sticky-container>
+    <div class="sticky-header" data-sticky data-options="marginTop:0;">
+        <div class="row">
+            <div class="small-12 columns">
+
+                <div class="responsive-wrapper">
+                    <a class="float-left" href="/"><img class="logo" src="../assets/img/logo.png" alt="logo"></a>
+
+                    <div class="title-bar float-right" data-toggle="main-menu" data-responsive-toggle="main-menu" data-hide-for="medium">
+                        <button class="menu-icon" type="button"></button>
+                        <div class="title-bar-title">Main Menu</div>
+                        <i class="fi-magnifying-glass show-for-small-only" aria-hidden="true" data-toggle="search-modal"></i>
+                    </div> <!-- /.title-bar -->
+                </div> <!-- /.responsive-wrapper -->
+
+
+
+                <div class="top-bar" id="main-menu" data-toggler data-animate="slide-in-down slide-out-up">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-responsive-menu="drilldown medium-dropdown">
+                            <li data-toggle="sub-nav" data-options="is_hover:true"><a href="#">Brands</a></li>
+                            <li><a href="{{root}}login.html">Login</a></li>
+                            <li><a href="{{root}}custom-search.html">Custom Search</a></li>
+                        </ul>
+                    </div> <!-- /.top-bar-left -->
+
+                    <div class="top-bar-right">
+                        <i class="fi-magnifying-glass show-for-medium" aria-hidden="true" data-toggle="search-modal"></i>
+                    </div> <!-- /.top-bar-right -->
+                </div> <!-- /.top-bar -->
+            </div> <!-- /.small-12 -->
+        </div> <!-- /.row -->
+
+        <div id="sub-nav" data-toggler data-animate="hinge-in-from-top hinge-out-from-top">
+            <div class="row">
+                <div class="small-12 columns">
+                    <ul>
+
+                        <div class="row">
+                            <div class="small-6 medium-6 large-3 columns">
+                                <li><a {{#ifpage 'altair'}}class="active" {{/ifpage}} href="{{root}}brands/altair.html">Altair</a></li>
+                                <li><a {{#ifpage 'anne-klein'}}class="active" {{/ifpage}} href="#">Anne Klein</a></li>
+                                <li><a {{#ifpage 'bebe'}}class="active" {{/ifpage}} href="#">bebe</a></li>
+                            </div> <!-- /.small-12 medium-6 large-3 columns -->
+                            <div class="small-6 medium-6 large-3 columns">
+                                <li><a {{#ifpage 'cole-haan'}}class="active" {{/ifpage}} href="#">Cole Haan</a></li>
+                                <li><a {{#ifpage 'genesis'}}class="active" {{/ifpage}} href="#">Genesis</a></li>
+                                <li><a {{#ifpage 'joe-joseph-abboud'}}class="active" {{/ifpage}} href="#">JOE Joseph Abboud</a></li>
+                            </div> <!-- /.small-12 medium-6 large-3 columns -->
+                            <div class="small-6 medium-6 large-3 columns">
+                                <li><a {{#ifpage 'joseph-abboud'}}class="active" {{/ifpage}} href="#">Joseph Abboud</a></li>
+                                <li><a {{#ifpage 'kilter'}}class="active" {{/ifpage}} href="#">Kilter</a></li>
+                                <li><a {{#ifpage 'otis-and-piper'}}class="active" {{/ifpage}} href="#">Otis &amp; Piper</a></li>
+                            </div> <!-- /.small-12 medium-6 large-3 columns -->
+                            <div class="small-6 medium-6 large-3 columns">
+                                <li><a {{#ifpage 'revlon'}}class="active" {{/ifpage}} href="#">Revlon</a></li>
+                                <li><a {{#ifpage 'sight-for-students'}}class="active" {{/ifpage}} href="#">Sight For Students</a></li>
+                                <li><a {{#ifpage 'sunlites'}}class="active" {{/ifpage}} href="#">Sunlites</a></li>
+                                <li><a {{#ifpage 'tommy-bahama'}}class="active" {{/ifpage}} href="#">Tommy Bahama</a></li>
+                            </div> <!-- /.small-12 medium-6 large-3 columns -->
+                        </div> <!-- /.row -->
+
+                    </ul>
+                </div> <!-- /.small-12 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.sub-menu -->
+
+    </div> <!-- /.sticky-header -->
+</header> <!-- /header -->
